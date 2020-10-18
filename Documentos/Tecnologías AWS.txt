@@ -1,0 +1,23 @@
+Amazon Web Services:
+*Amazon Api Gateway
+*Amazon EC2
+*Amazon RDS
+*Amazon Simple Notification Services
+*Amazon SageMaker
+*Amazon Lambda
+
+Lenguajes de programación 
+*Python y Java para aplicacion Android
+Librerias
+*OpenCV para preprocesamiento de imágenes
+
+-------------------------------------------------------
+
+Aplicación de AWS en el flujo de actividades:
+*Amazon Api Gateway: Para poder crear las API con las que nos conectaremos desde android hasta el back-end, devolver el resultado de la autenticación e incluso lanzar el trigger para enviar la notificación de alerta a los dispositivos móviles.
+*Amazon Lambda: A través del Api Gateway lanzará la función de Amazon SNS
+*Firebase Cloud Messaging y Amazon Simple Notification Services: Lanzan la notificación push en los dispositivos móviles
+*Amazon EC2: Instancia AWS para procesar el Back-End de la aplicación (preprocesado de imagenes, llamada a algoritmo, conexion a BD y respuesta de autenticacion)
+*Amazon RDS: Base de datos relacional de AWS para albergar los templates biométricos
+*Amazon SageMaker: Para el entrenamiento, el tunning y el despliegue de las redes neuronales artificiales para la autenticación.
+
