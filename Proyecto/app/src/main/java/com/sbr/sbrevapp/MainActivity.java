@@ -3,6 +3,7 @@ package com.sbr.sbrevapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -19,6 +20,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         Button btn = (Button) findViewById(R.id.btnToken);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,5 +31,20 @@ public class MainActivity extends Activity {
             }
         });
 
+        setup();
+
+    }
+
+    private void setup(){
+        Button btnAuth =(Button)findViewById(R.id.btnAuth);
+        btnAuth.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startAuth();
+            }
+        });
+    }
+    private void startAuth(){
+        Intent authIntent=new Intent(this, NotificationAlert.class);
+        startActivity(authIntent);
     }
 }

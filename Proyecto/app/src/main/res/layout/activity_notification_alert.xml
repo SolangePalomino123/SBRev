@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationAlert">
+
+    <Button
+        android:id="@+id/btnCaptureHand"
+        android:layout_width="195dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="107dp"
+        android:text="Captura biometría" />
+
+    <ImageView
+        android:id="@+id/imgViewHand"
+        android:layout_width="296dp"
+        android:layout_height="403dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="93dp"
+        android:src="@drawable/ic_fingerprint" />
+</RelativeLayout>
